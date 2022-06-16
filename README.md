@@ -6,7 +6,7 @@ Padrões de projeto (design patterns) são soluções típicas para problemas co
 
 Os padrões criacionais fornecem vários mecanismos de criação de objetos, que aumentam a flexibilidade e reutilização de código já existente.
 
-- [Factory Method]()
+- [Factory Method](https://github.com/LucasDuarteInacio/Java-Design-Patterns/blob/main/Factory_Method/FactoryMethod.md)
 - Abstract Factory
 - Builder
 - Prototype
