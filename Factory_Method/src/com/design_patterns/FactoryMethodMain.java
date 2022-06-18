@@ -1,25 +1,39 @@
 package com.design_patterns;
 
-import java.util.Scanner;
+import com.design_patterns.dialogs.Dialog;
+import com.design_patterns.dialogs.HtmlDialog;
+import com.design_patterns.dialogs.NativeDialog;
 
 public class FactoryMethodMain {
+    private static Dialog dialog;
 
     public static void main(String[] args) {
-
-        System.out.println("Insira o tipo de botão:(web ou windows)");
-        Scanner leitor = new Scanner(System.in);
-        String dialogType = leitor.next();
-
-        switch (dialogType){
-            case "windows":{
-            WindowsDialog dialog = new WindowsDialog();
-                dialog.render();
-                break;
-        }
-            case "web":{
-                WebDialog dialog = new WebDialog();
-                dialog.render();
-                break;
-            }
+        configure();
+        runBusinessLogic();
     }
-}}
+
+    /**
+     * A fábrica concreta geralmente é escolhida dependendo da configuração ou
+     * opções de ambiente.
+     */
+    static void configure() {
+        /*
+         * Para se testar o botão nativo deve trocar o conteudo do "equals" pelo nome do SO que esta sendo utilizado
+         * e para testar o bao html basta trocar o conteudo por um nome invalido
+         */
+        if (System.getProperty("os.name").equals("Linux")) {
+            dialog = new NativeDialog();
+        } else {
+            dialog = new HtmlDialog();
+        }
+    }
+
+    /**
+     * O código do cliente deve funcionar com fábricas e produtos através de
+     * interfaces abstratas. Desta forma não importa em qual fábrica trabalha
+     * com e que tipo de produto devolve.
+     */
+    static void runBusinessLogic() {
+        dialog.renderWindow();
+    }
+}

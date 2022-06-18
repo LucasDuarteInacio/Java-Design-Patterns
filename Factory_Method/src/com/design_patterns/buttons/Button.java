@@ -1,7 +1,7 @@
-package com.design_patterns;
+package com.design_patterns.buttons;
 
 /**
- * Common interface for all buttons.
+ * Interface comum para todos os botões.
  */
 public interface Button {
     void render();

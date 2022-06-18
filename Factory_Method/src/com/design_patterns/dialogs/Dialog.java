@@ -1,4 +1,6 @@
-package com.design_patterns;
+package com.design_patterns.dialogs;
+
+import com.design_patterns.buttons.Button;
 
 /**
  * Base factory class. Note that "factory" is merely a role for the class. It
@@ -8,15 +10,15 @@ package com.design_patterns;
 public abstract class Dialog {
 
     public void renderWindow() {
-        // ... other code ...
+        // ... Outros codigos...
 
         Button okButton = createButton();
         okButton.render();
     }
 
     /**
-     * Subclasses will override this method in order to create specific button
-     * objects.
+     * As subclasses substituirão este método para criar um botão específico
+     * objetos.
      */
     public abstract Button createButton();
 }

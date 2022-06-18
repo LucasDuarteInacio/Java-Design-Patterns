@@ -10,4 +10,8 @@ Os padrões criacionais fornecem vários mecanismos de criação de objetos, que
 - Abstract Factory
 - Builder
 - Prototype
-- Singleton
+- Singletonp
+
+## Referencias
+
+Os códigos e textos apresentados neste repositório foram retirados/inspirados no site [refactoring.guru](refactoring.guru/)

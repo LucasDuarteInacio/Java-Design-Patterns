@@ -1,7 +1,5 @@
 package com.design_patterns.buttons;
 
-import com.design_patterns.buttons.Button;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -10,7 +8,7 @@ import java.awt.event.ActionListener;
 /**
  * Implementação do botão do sistema operacional nativo.
  */
-public class WindowsButton implements Button {
+public class NativeButton implements Button {
     JPanel panel = new JPanel();
     JFrame frame = new JFrame();
     JButton button;

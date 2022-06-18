@@ -1,8 +1,10 @@
-package com.design_patterns;
+package com.design_patterns.buttons;
 
+
+import com.design_patterns.buttons.Button;
 
 /**
- * HTML button implementation.
+ * Implementação de botão HTML
  */
 public class HtmlButton implements Button {
 

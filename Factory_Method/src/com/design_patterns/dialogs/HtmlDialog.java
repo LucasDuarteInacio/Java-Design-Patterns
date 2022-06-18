@@ -1,7 +1,11 @@
-package com.design_patterns;
+package com.design_patterns.dialogs;
+
+import com.design_patterns.buttons.Button;
+import com.design_patterns.buttons.HtmlButton;
+import com.design_patterns.dialogs.Dialog;
 
 /**
- * HTML Dialog will produce HTML buttons.
+ * A caixa de diálogo HTML produzirá botões HTML.
  */
 public class HtmlDialog extends Dialog {
 
