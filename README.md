@@ -12,6 +12,34 @@ Os padrões criacionais fornecem vários mecanismos de criação de objetos, que
 - Prototype
 - Singletonp
 
+## Padrões de projeto estruturais
+
+Os padrões estruturais explicam como montar objetos e classes em estruturas maiores mas ainda mantendo essas estruturas flexíveis e eficientes.
+
+- Adapter
+- Bridge
+- Composite
+- Decorator
+- [Facade](facade/Facade.md)
+- Flyweight
+- Proxy
+
+## Padrões de projeto comportamentais
+
+Padrões comportamentais são voltados aos algoritmos e a designação de responsabilidades entre objetos.
+
+- Chain of Responsibility
+- Command
+- Iterator
+- Mediator
+- Memento
+- Observer
+- State
+- Strategy
+- Template Method
+- Visitor
+
+
 ## Referencias
 
-Os códigos e textos apresentados neste repositório foram retirados/inspirados no site [refactoring.guru](refactoring.guru/)
+Os códigos e textos apresentados neste repositório foram retirados/inspirados no site [refactoring.guru](https://refactoring.guru/pt-br/)
